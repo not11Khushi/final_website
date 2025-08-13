@@ -45,25 +45,50 @@
       />
       <img src="badminton.png" alt="Badminton Racket" class="racket" />
     </div>
-    <div
+    <div class="feather-section">
+      <div class="feather-gallery">
+        <img
+          src="https://i.pinimg.com/564x/01/2e/d3/012ed3a6e0f8a7082d1db5e3d16f5c41.jpg"
+          alt="Feather 1"
+        />
+        <img src="f2.jpg" alt="Feather 2" />
+        <img
+          src="https://i.pinimg.com/564x/bf/8f/37/bf8f379f229f7d9f71d72d7c7dc2f1e0.jpg"
+          alt="Feather 3"
+        />
+        <img
+          src="https://i.pinimg.com/564x/9a/aa/85/9aaa85db058d1a3dcce6a57f6ff2aa57.jpg"
+          alt="Feather 4"
+        />
+      </div>
+
+      <div class="feather-text">
+        <div class="feather-heading">Feather Collection</div>
+        <div class="feather-description">
+          Collecting feathers has become one of my most cherished hobbies. Each
+          feather feels like a delicate gift from nature, carrying with it the
+          silent artistry of God’s creation. Their patterns, textures, and
+          colors remind me that beauty exists in the smallest details, often
+          overlooked in our busy lives. Through this collection, I’ve learned to
+          pause, observe, and appreciate the quiet wonders that surround us
+          every day.
+        </div>
+      </div>
+    </div>
+
     <script>
-      // Feather shuffle animation
-      const feathersContainer = document.getElementById("feathers");
-      const featherImages = ["FEATHER1.png", "FEATHER2.png", "FEATHER3.png"];
-      featherImages.forEach((src) => {
-        const img = document.createElement("img");
-        img.src = src;
-        img.style.top = Math.random() * 150 + "px";
-        img.style.left = Math.random() * 400 + "px";
-        feathersContainer.appendChild(img);
-      });
-      setInterval(() => {
-        const imgs = feathersContainer.querySelectorAll("img");
-        imgs.forEach((img) => {
-          img.style.top = Math.random() * 150 + "px";
-          img.style.left = Math.random() * 400 + "px";
+      // Shuffle effect for feather images
+      const images = document.querySelectorAll(".feather-gallery img");
+
+      function shuffleImages() {
+        const srcArray = Array.from(images).map((img) => img.src);
+        srcArray.sort(() => Math.random() - 0.5);
+        images.forEach((img, i) => {
+          img.src = srcArray[i];
         });
-      }, 2000);
+      }
+
+      setInterval(shuffleImages, 2000); // shuffle every 2 seconds
     </script>
   </body>
 </html>

@@ -111,40 +111,58 @@ body {
   transform: scale(1.1);
 }
 
-/* Feather Section */
 .feather-section {
-  width: 70%;
-  height: 250px;
-  background: #ffcccc;
-  border-radius: 20px;
-  margin: 40px auto;
+  background-color: #d3d8de;
+  padding: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-.feather-heading {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-weight: bold;
-  font-size: 20px;
-}
-.feather-container img {
-  position: absolute;
-  width: 80px;
-  transition: all 1s ease;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 15px;
+  width: 90%;
+  margin: 30px auto;
 }
 
-/* Feather text box */
-.feather-text {
-  background: #d3d3d3;
+.feather-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 10px;
+}
+
+.feather-gallery img {
   width: 100%;
-  height: 150px;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 16px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.feather-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.feather-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.feather-heading {
+  background-color: #c65d5d;
+  color: white;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.feather-description {
+  background-color: #c65d5d;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
   line-height: 1.5;
+  font-size: 15px;
 }

@@ -68,6 +68,9 @@
 .quote-left {
   width: 701px;
 }
+.quote-left text {
+  margin-left: 20%;
+}
 .quote-right {
   margin-right: 5px; /* space from right edge */
   width: 150px;
