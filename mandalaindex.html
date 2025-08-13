@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="mandalastyle.css" />
+  </head>
+  <body>
+    <h1>About Me</h1>
+    <div class="top">
+      <div class="left-box">
+        <img src="DSC_7619.JPG" alt="My Photo" />
+      </div>
+      <div class="right-box">
+        <p>
+          Hello! I'm Khushi Mehta, a communication designer with strong
+          interpersonal skills and a compassionate nature. I have a deep love
+          for art and believe in bringing creativity to life through my work. I
+          also enjoy volunteering with NGOs and cherish the experience of
+          working alongside them.
+        </p>
+        <p class="quote">“Art is the language of the soul.”</p>
+      </div>
+    </div>
+
+    <div class="middle">
+      <img
+        src="Copy of Impact Of Social Media .png"
+        alt="Basketball"
+        class="rotate"
+      />
+      <div class="text">
+        <h2>Another art of mine:</h2>
+        <p>
+          I love playing basketball and badminton. I compete at the district
+          level in badminton and have participated in many matches. Sports teach
+          us that losing is just as important as winning—it’s part of the
+          journey.
+        </p>
+      </div>
+      <img src="badminton.png" alt="Badminton" />
+    </div>
+
+    <div class="feathers-section">
+      <div class="heading">Feather Collection</div>
+      <div class="feathers-container" id="feathers">
+        <!-- Feather images will go here -->
+      </div>
+    </div>
+
+    <div class="feathers-text">
+      <p>
+        My feather collection reflects both nature’s beauty and lightness—each
+        feather tells its own quiet story in shape and texture.
+      </p>
+    </div>
+
+    <script>
+      const feathersContainer = document.getElementById("feathers");
+      const featherImages = ["f1.jpg", "f2.jpg", "f3.jpg"];
+      featherImages.forEach((src, idx) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.style.top = Math.random() * 60 + "px";
+        img.style.left = Math.random() * 60 + "px";
+        feathersContainer.appendChild(img);
+      });
+      setInterval(() => {
+        const imgs = feathersContainer.querySelectorAll("img");
+        imgs.forEach((img) => {
+          img.style.top = Math.random() * 200 + "px";
+          img.style.left = Math.random() * 500 + "px";
+        });
+      }, 2000);
+    </script>
+  </body>
+</html>

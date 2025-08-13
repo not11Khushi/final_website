@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-box {
+  width: 30%;
+  height: 20vh;
+  background: #d3d3d3;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+}
+.left-box img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  margin-right: 70%;
+}
+.left-box h1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+.right-box {
+  width: 90%;
+  height: 40vh;
+  background: rgb(155, 23, 23);
+  margin-left: auto;
+  padding: 20px;
+  color: white;
+  box-sizing: border-box;
+}
+.right-box p {
+  margin: 0 0 10px;
+}
+.right-box .quote {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.middle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+.middle img {
+  width: 20%;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.middle img.rotate {
+  animation: spin 5s linear infinite;
+}
+.middle img:hover {
+  transform: scale(1.1);
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.middle .text {
+  width: 40%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.feathers-section {
+  width: 70%;
+  height: 40vh;
+  background: #ffcccc;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.feathers-section .heading {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: bold;
+}
+.feathers-section .feathers-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.feathers-section .feathers-container img {
+  position: absolute;
+  width: 100px;
+  transition: all 1s ease;
+}
+
+.feathers-text {
+  width: 100%;
+  height: 30vh;
+  background: #bbb9b9;
+  padding: 20px;
+  box-sizing: border-box;
+}

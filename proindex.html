@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethnographic Layout Section</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+      }
+
+      .section {
+        width: 1920px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      /* Top Row */
+      .top-row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        width: 70%;
+      }
+
+      .top-row img {
+        width: 60px;
+        height: auto;
+        display: block;
+      }
+
+      /* Bottom Row */
+      .bottom-row {
+        display: flex;
+        gap: 20px;
+        align-items: stretch;
+        width: 60px;
+      }
+
+      /* Left bottom image with overlay text */
+      .image-overlay {
+        position: relative;
+        flex: 1;
+      }
+
+      .image-overlay img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .overlay-text {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: #a93030; /* red */
+        color: #fff;
+        padding: 15px 20px;
+        font-size: 14px;
+        max-width: 250px;
+        font-weight: 500;
+      }
+
+      /* Right text box */
+      .text-box {
+        flex: 1;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        position: relative;
+      }
+
+      .text-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #a93030; /* red header bar */
+        z-index: 1;
+      }
+
+      .text-box h3 {
+        margin-top: 0;
+        position: relative;
+        z-index: 2;
+        color: #000;
+        padding-top: 10px;
+      }
+
+      .text-box p {
+        position: relative;
+        z-index: 2;
+        color: #000;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <!-- Top Row -->
+      <div class="top-row">
+        <img src="ethno_2.jpg" alt="Top Left" />
+        <img src="ethno_3.png" alt="Top Right" />
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="bottom-row">
+        <!-- Left Image with Overlay -->
+        <div class="image-overlay">
+          <img src="ethno_4.JPG" alt="Bottom Left" />
+          <div class="overlay-text">
+            Until you experience a culture with your heart, you can never truly
+            understand its beauty
+          </div>
+        </div>
+
+        <!-- Right Text Box -->
+        <div class="text-box">
+          <h3>Why This Place and Culture</h3>
+          <p>
+            The decision to focus on this community was driven by their dual
+            existence—deeply traditional yet subtly adaptive. They maintain
+            their pastoral lifestyle, ritual practices, and strong kinship
+            systems while also engaging with selective aspects of modern life.
+            This tension between preservation and adaptation provides valuable
+            insights for UX research, especially in understanding how tradition
+            influences modern behavior.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
