@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f6fa;
+  background: #ffffff;
 }
 
 /* About Me Section */
@@ -15,10 +15,10 @@ body {
 .about-photo {
   position: relative;
   flex: 1;
-  background: #d3d3d3;
-  display: flex;
+  background: #b84e57;
   justify-content: center;
   align-items: center;
+  width: 20%;
 }
 .about-photo img {
   max-width: 100%;
@@ -28,7 +28,9 @@ body {
   position: absolute;
   top: 10px;
   left: 20px;
-  background: #b84e57;
+  background: #d3d3d3;
+  display: flex;
+
   color: white;
   padding: 8px 15px;
   border-radius: 15px;
@@ -36,8 +38,8 @@ body {
 }
 .about-text {
   flex: 1;
-  background: #c0392b;
-  color: white;
+  background: #e6e0e0;
+  color: rgb(15, 1, 1);
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -73,7 +75,7 @@ body {
   padding: 8px 20px;
   border-radius: 15px;
   position: absolute;
-  top: -20px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -84,9 +86,9 @@ body {
 }
 .basketball {
   position: absolute;
-  bottom: -30px;
-  left: -30px;
-  width: 120px;
+  bottom: -110px;
+  left: -160px;
+  width: 300px;
   animation: spin 5s linear infinite;
   transition: transform 0.3s;
 }
@@ -100,9 +102,9 @@ body {
 }
 .racket {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 120px;
+  top: -140px;
+  right: -190px;
+  width: 400px;
   transition: transform 0.3s;
 }
 .racket:hover {
